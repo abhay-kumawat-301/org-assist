@@ -1,6 +1,6 @@
 import { useAuth } from "@/auth/AuthContext";
 import { useEffect, useState, useRef } from "react";
-import { uploadDocument, getDocuments, deleteDocument } from "@/api/document.api";
+import { uploadDocument, getDocuments, deleteDocument, type Document } from "@/api/document.api";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -24,7 +24,8 @@ function AdminDashboard() {
     if (!token) return;
 
     getDocuments(token)
-      .then(setDocuments)
+      .then((docs)=>setDocuments(docs        
+      ))
       .catch((error) => {
         console.error(error);
       });

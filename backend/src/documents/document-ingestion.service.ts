@@ -29,7 +29,7 @@ export async function processDocument(
             [
                 documentId,
                 chunk,
-                `[${embedding.join(",")}]`,
+                `[${embedding?.join(",")}]`,
             ]
         );
     }
