@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/server.ts",
-     "build": "tsc",
+    "build": "tsc",
     "start": "node dist/server.js"
   },
   "keywords": [],
@@ -34,6 +34,6 @@
     "@types/pdf-parse": "^1.1.5",
     "@types/pg": "^8.21.0",
     "tsx": "^4.23.12",
-    "typescript": "^7.0.2"
+    "typescript": "^6.0.3"
   }
 }
