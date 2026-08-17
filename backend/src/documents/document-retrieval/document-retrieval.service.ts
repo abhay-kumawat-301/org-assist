@@ -1,6 +1,6 @@
 // Semantic similarity search
-import pool from "../../config/database";
-import { generateEmbedding } from "../../ai/embedding.service";
+import pool from "../../config/database.js";
+import { generateEmbedding } from "../../ai/embedding.service.js";
 
 export const retrieveRelevantChunks = async (
     question: string,
