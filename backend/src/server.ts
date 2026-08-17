@@ -1,15 +1,15 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import pool from "./config/database";
-import authRoutes from "./auth/auth.routes";
-import employeeRoutes from "./employees/employee.routes";
+import pool from "./config/database.js";
+import authRoutes from "./auth/auth.routes.js";
+import employeeRoutes from "./employees/employee.routes.js";
 import {
   authenticate,
   AuthRequest,
-} from "./middleware/auth.middleware";
-import assistantRoutes from "./assistant/assistant.routes";
-import documentRoutes from "./documents/document.routes";
+} from "./middleware/auth.middleware.js";
+import assistantRoutes from "./assistant/assistant.routes.js";
+import documentRoutes from "./documents/document.routes.js";
 dotenv.config();
 const app = express();
 

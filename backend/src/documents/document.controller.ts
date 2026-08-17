@@ -1,7 +1,7 @@
 import { Response } from "express";
-import { AuthRequest } from "../middleware/auth.middleware";
-import { processDocument } from "./document-ingestion.service";
-import { saveDocument, getDocuments, deleteDocument } from "./document.service";
+import { AuthRequest } from "../middleware/auth.middleware.js";
+import { processDocument } from "./document-ingestion.service.js";
+import { saveDocument, getDocuments, deleteDocument } from "./document.service.js";
 export const uploadDocument = async (
   req: AuthRequest,
   res: Response

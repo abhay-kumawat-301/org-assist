@@ -4,9 +4,10 @@ import {
   uploadDocument,
   listDocuments,
   removeDocument,
-} from "./document.controller"; import { authenticate } from "../middleware/auth.middleware";
-import { requireAdmin } from "../middleware/role.middleware";
-import { retrieveChunks } from "./document-retrieval/document-retrieval.controller";
+} from "./document.controller.js"; 
+import { authenticate } from "../middleware/auth.middleware.js";
+import { requireAdmin } from "../middleware/role.middleware.js";
+import { retrieveChunks } from "./document-retrieval/document-retrieval.controller.js";
 
 const router = Router();
 

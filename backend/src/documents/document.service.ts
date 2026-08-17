@@ -1,4 +1,4 @@
-import pool from "../config/database";
+import pool from "../config/database.js";
 
 interface SaveDocumentData {
   organizationId: number;

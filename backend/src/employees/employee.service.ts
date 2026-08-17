@@ -1,5 +1,5 @@
 import bcrypt from "bcrypt";
-import pool from "../config/database";
+import pool from "../config/database.js";
 
 interface CreateEmployeeData {
   organizationId: number;

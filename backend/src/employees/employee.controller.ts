@@ -1,9 +1,9 @@
 import { Response } from "express";
-import { AuthRequest } from "../middleware/auth.middleware";
+import { AuthRequest } from "../middleware/auth.middleware.js";
 import {
   createEmployee,
   getEmployees,
-} from "./employee.service";
+} from "./employee.service.js";
 
 export const addEmployee = async (
   req: AuthRequest,

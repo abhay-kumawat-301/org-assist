@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-import pool from "../config/database";
+import pool from "../config/database.js";
 
 interface RegisterData {
   organizationName: string;

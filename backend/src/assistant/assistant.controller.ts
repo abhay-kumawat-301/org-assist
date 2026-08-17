@@ -1,6 +1,6 @@
 import { Response } from "express";
-import { AuthRequest } from "../middleware/auth.middleware";
-import { generateAnswer } from "./assistant.service";
+import { AuthRequest } from "../middleware/auth.middleware.js";
+import { generateAnswer } from "./assistant.service.js";
 
 export const askAssistant = async (
   req: AuthRequest,

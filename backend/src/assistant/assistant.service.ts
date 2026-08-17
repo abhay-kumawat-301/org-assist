@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { retrieveRelevantChunks } from "../documents/document-retrieval/document-retrieval.service";
+import { retrieveRelevantChunks } from "../documents/document-retrieval/document-retrieval.service.js";
 
 const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY,
@@ -22,7 +22,8 @@ export const generateAnswer = async (
 
   // 2. Build context from retrieved chunks
   const context = chunks
-    .map((chunk, index) => {
+    .map((chunk:any, index:number
+    ) => {
       return `Source ${index + 1}:\n${chunk.content}`;
     })
     .join("\n\n");
