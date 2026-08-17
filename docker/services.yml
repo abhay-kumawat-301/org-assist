@@ -1,5 +1,5 @@
 services:
-  postgres:
+  ps-postgres:
     image: pgvector/pgvector:pg18
     container_name: ps-postgres
     ports:
