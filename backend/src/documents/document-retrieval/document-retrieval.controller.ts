@@ -1,6 +1,6 @@
 import { Response } from "express";
-import { AuthRequest } from "../../middleware/auth.middleware";
-import { retrieveRelevantChunks } from "./document-retrieval.service";
+import { AuthRequest } from "../../middleware/auth.middleware.js";
+import { retrieveRelevantChunks } from "./document-retrieval.service.js";
 
 export const retrieveChunks = async (
   req: AuthRequest,

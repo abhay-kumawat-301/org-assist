@@ -1,8 +1,8 @@
 // document-ingestion.service.ts
-import { extractPdfText } from "./document.parser";
-import { chunkText } from "./document.chunker";
-import { generateEmbedding } from "../ai/embedding.service";
-import pool from "../config/database";
+import { extractPdfText } from "./document.parser.js";
+import { chunkText } from "./document.chunker.js";
+import { generateEmbedding } from "../ai/embedding.service.js";
+import pool from "../config/database.js";
 
 export async function processDocument(
     filePath: string,
