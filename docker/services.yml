@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: pgvector/pgvector:17-bookworm
+    image: pgvector/pgvector:pg18
     container_name: ps-postgres
     ports:
       - "${DB_PORT}:5432"
