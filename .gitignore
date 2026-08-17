@@ -6,9 +6,9 @@ node_modules/
 # ================================
 # Environment variables / secrets
 # ================================
-.env
-.env.*
-!.env.example
+**/*.env
+**/*.env.*
+!**/*.env.example
 
 # ================================
 # Build outputs
