@@ -3,13 +3,13 @@
     {
       "name": "org-assist-backend",
       "script": "npm",
-      "args": "run build --workspace=backend && npm run start",
+      "args": "run start --workspace=backend",
       "watch": false
     },
     {
       "name": "org-assist-frontend",
-      "script": "npm",
-      "args": "run build --workspace=frontend && /bin/sh scripts/frontend-serve.sh -ef .env.frontend",
+      "script": "/bin/sh",
+      "args": "scripts/frontend-serve.sh -ef .env.frontend",
       "watch": false
     }
   ]
