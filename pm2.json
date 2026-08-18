@@ -1,0 +1,16 @@
+{
+  "apps": [
+    {
+      "name": "org-assist-backend",
+      "script": "npm",
+      "args": "run build --workspace=backend && npm run start",
+      "watch": false
+    },
+    {
+      "name": "org-assist-frontend",
+      "script": "npm",
+      "args": "run build --workspace=frontend && /bin/sh scripts/frontend-serve.sh -ef .env.frontend",
+      "watch": false
+    }
+  ]
+}
