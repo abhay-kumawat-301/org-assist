@@ -1,8 +1,5 @@
 #!/bin/sh
 
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-
 ENV_FILE=""
 
 # parse arguments
@@ -36,7 +33,7 @@ fi
 
 # load env file
 set -a
-. "$PROJECT_ROOT/$ENV_FILE"
+. "$ENV_FILE"
 set +a
 
 # run your command
