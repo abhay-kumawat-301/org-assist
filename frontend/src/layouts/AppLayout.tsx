@@ -21,9 +21,9 @@ function AppLayout() {
               <>
                 <Button
                   variant={location.pathname === "/admin" ? "secondary" : "ghost"}
-                  asChild
+                  render={<Link to="/admin" />}
                 >
-                  <Link to="/admin">Dashboard</Link>
+                  Dashboard
                 </Button>
 
                 <Button
@@ -32,7 +32,8 @@ function AppLayout() {
                       ? "secondary"
                       : "ghost"
                   }
-                  asChild
+                  render={<Link to="/employees" />}
+
                 >
                   <Link to="/employees">Employees</Link>
                 </Button>
@@ -41,7 +42,8 @@ function AppLayout() {
 
             <Button
               variant={location.pathname === "/chat" ? "secondary" : "ghost"}
-              asChild
+              render={<Link to="/chat" />}
+
             >
               <Link to="/chat">Assistant</Link>
             </Button>
